@@ -14,11 +14,8 @@ const fields = [
     options: ["Male", "Female", "Other"],
   },
   { type: "textarea", label: "Description", name: "message" },
-  {
-    type: "Checkbox",
-    label: "Terms and Conditions",
-    name: "terms",
-  },
+  { type: "Checkbox", label: "Terms and Conditions", name: "terms" },
+
   { type: "file", label: "Enter File", name: "file" },
 ];
 

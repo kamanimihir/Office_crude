@@ -1,5 +1,6 @@
 import React from "react";
 import { Table as BootstrapTable } from "react-bootstrap";
+import { PencilSquare, Trash } from "react-bootstrap-icons"; 
 
 const Table = ({ header, item, handleEdit, handleDelet }) => {
   return (
@@ -13,7 +14,7 @@ const Table = ({ header, item, handleEdit, handleDelet }) => {
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>c
+        <tbody>
           {item.map((row, index) => (
             <tr key={index}>
               {header.map((col, colIndex) => (
@@ -63,8 +64,20 @@ const Table = ({ header, item, handleEdit, handleDelet }) => {
                 </td>
               ))}
               <td>
-                <button onClick={() => handleEdit(index)}>Edit</button>
-                <button onClick={() => handleDelet(index)}>Delet</button>
+               
+                <PencilSquare
+                  size={22}
+                  color="blue"
+                  style={{ cursor: "pointer", marginRight: "10px" }}
+                  onClick={() => handleEdit(index)}
+                />
+
+                <Trash
+                  size={22}
+                  color="red"
+                  style={{ cursor: "pointer" }}
+                  onClick={() => handleDelet(index)}
+                />
               </td>
             </tr>
           ))}

@@ -2,8 +2,6 @@ const validateForm = (inputValue) => {
   let errors = {};
   if (!inputValue.firstName.trim()) {
     errors.firstName = "First Name is required";
-  } else if (inputValue.firstName.length < 8) {
-    errors.firstName = "First Name must be at least 8 characters long";
   } else if (!/^[A-Z]/.test(inputValue.firstName)) {
     errors.firstName = "First Name must start with a capital letter";
   }
