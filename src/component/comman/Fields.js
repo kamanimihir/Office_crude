@@ -1,6 +1,6 @@
 const fields = [
   { type: "text", label: "First Name", name: "firstName" },
-  { type: "text", label: "last Name", name: "lasttName" },
+  // { type: "text", label: "last Name", name: "lasttName" },
   {
     type: "select",
     label: "City",
@@ -14,7 +14,7 @@ const fields = [
     options: ["Male", "Female", "Other"],
   },
   { type: "textarea", label: "Description", name: "message" },
-  { type: "Checkbox", label: "Terms and Conditions", name: "terms" },
+  { type: "checkbox", label: "Terms and Conditions", name: "terms" },
 
   { type: "file", label: "Enter File", name: "file" },
 ];
